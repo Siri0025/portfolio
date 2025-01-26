@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Siri Yellu - Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/img/logo.jpg"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .profile-img {
+      transition: transform 0.3s ease-in-out;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+    
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    .logo-img {
+      transition: all 0.3s ease;
+      border-radius: 8px;
+    }
+
+    .logo-img:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(18, 214, 64, 0.3);
+    }
+
+    .icon-box {
+      background: rgba(9, 32, 58, 0.9);
+      transition: all 0.3s ease;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .icon-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(18, 214, 64, 0.2);
+    }
+
+    .section-show {
+      display: block !important;
+    }
+
+    section {
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      top: 140px;
+      bottom: 100%;
+      opacity: 0;
+      transition: ease-in-out 0.4s;
+      z-index: 2;
+    }
+
+    section.section-show {
+      top: 100px;
+      bottom: auto;
+      opacity: 1;
+      padding-bottom: 45px;
+    }
+
+    .nav-menu a {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Background Image -->
+  <img class="background-image" src="assets/img/about/back.png" alt="background">
+
+  <!-- Header -->
+  <header id="header" class="header-tops">
+    <div class="container">
+      <h1><a href="index.html">Siri Yellu</a></h1>
+      <h2 style="color:#fff">I am <span class="typing" style="color:#12D640"></span></h2>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social-links">
+        <a href="mailto:siriyellu20025@gmail.com" target="_blank" class="gmail"><i class="bx bxl-google"></i></a>
+        <a href="https://www.linkedin.com/in/siri-reddy-yellu" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/Siri0025" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+<section id="about" class="about">
+  <div class="about-me container">
+    <div class="section-title">
+      <h2>About Me</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4" data-aos="fade-right">
+        <!-- Profile Images with Hover Effect -->
+        <div class="profile-images">
+          <img src="assets/img/about/siricdaypic2.png" class="img-fluid profile-img mb-4" alt="Profile Picture 1">
+          <img src="assets/img/about/siripic1.JPG" class="img-fluid profile-img" alt="Profile Picture 2">
+        </div>
+      </div>
+      
+      <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <p>
+          I am a Graduate student in Computer Science at Kennesaw State University with a strong foundation in Machine Learning, 
+          Deep Learning, and AI applications. Experienced in implementing cutting-edge ML algorithms for real-world problems, 
+          with a focus on computer vision and natural language processing. Published researcher with multiple papers in 
+          prestigious conferences and a patent holder for innovative technology solutions.
+        </p>
+
+        <!-- Move Certificates Carousel here -->
+         
+      
+        <marquee>
+        <div class="certificates-carousel owl-carousel owl-theme">
+          <div class="item">
+            <div class="certificate-box">
+              <object data="assets/img/about/Generative Adversarial Quest_ Enhancing Question and Answer Generation through GAN - Yellu Siri.pdf" 
+                     type="application/pdf" width="100%" height="400px">
+                <p>Unable to display PDF. <a href="assets/img/about/Generative Adversarial Quest_ Enhancing Question and Answer Generation through GAN - Yellu Siri.pdf" target="_blank">Click here</a> to download.</p>
+              </object>
+              <h6 class="text-center mt-2">Generative Adversarial Quest Paper</h6>
+            </div>
+          </div>
+          <div class="item">
+            <div class="certificate-box">
+              <object data="assets/img/about/iferp-apple diseases classification.pdf" 
+                     type="application/pdf" width="100%" height="400px">
+                <p>Unable to display PDF. <a href="assets/img/about/iferp-apple diseases classification.pdf" target="_blank">Click here</a> to download.</p>
+              </object>
+              <h6 class="text-center mt-2">Apple Disease Classification Paper</h6>
+            </div>
+          </div>
+          <div class="item">
+            <div class="certificate-box">
+              <object data="assets/img/about/Ms.Yellu Siri-Twitter sentiment Analysis.pdf" 
+                     type="application/pdf" width="100%" height="400px">
+                <p>Unable to display PDF. <a href="assets/img/about/Ms.Yellu Siri-Twitter sentiment Analysis.pdf" target="_blank">Click here</a> to download.</p>
+              </object>
+              <h6 class="text-center mt-2">Twitter Sentiment Analysis Paper</h6>
+            </div>
+          </div>
+          <div class="item">
+            <div class="certificate-box">
+              <object data="assets/img/about/YELLU SIRI_Certificate.pdf" 
+                     type="application/pdf" width="100%" height="400px">
+                <p>Unable to display PDF. <a href="assets/img/about/YELLU SIRI_Certificate.pdf" target="_blank">Click here</a> to download.</p>
+              </object>
+              <h6 class="text-center mt-2">Achievement Certificate</h6>
+            </div>
+          </marquee>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+  <!-- Education Section -->
+  <section id="education" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Education</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" data-aos="fade-up">
+          <div class="col-md-12 mt-4 mt-md-0 icon-box">
+            <img src="assets/img/education/kennesaw state university.png" class="img-fluid logo-img" style="float:left;margin:0 10px 0 0;" width="90" alt="KSU">
+            <h4 style="text-align:left;"><a href="#" style="color:#12d640">Kennesaw State University</a></h4>
+            <h5 style="text-align:left;">Master of Science in Computer Science</h5>
+            <span style="float:left;color:#fff;"><em>August 2024 - December 2025</em></span>
+            <span style="float:right;color:#fff;"><em>GA, United States</em></span><br><br>
+            <p><strong>SGPA: 4.00</strong></p>
+          </div>
+          
+          <div class="col-md-12 mt-4 mt-md-0 icon-box">
+            <img src="assets/img/education/cvr.jpeg" class="img-fluid logo-img" style="float:left;margin:0 10px 0 0;" width="90" alt="CVR">
+            <h4 style="text-align:left;"><a href="#" style="color:#12d640">CVR College of Engineering</a></h4>
+            <h5 style="text-align:left;">Bachelor of Technology in Computer Science with Minor in AIML</h5>
+            <span style="float:left;color:#fff;"><em>May 2020 - April 2024</em></span>
+            <span style="float:right;color:#fff;"><em>Hyderabad, Telangana</em></span><br><br>
+            <p><strong>CGPA: 9.24 (Minor: 8.83)</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Experience</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="icon-box">
+            <img src="assets/img/experience/kennesaw state university-Gra.png" class="img-fluid logo-img" style="float:left;margin:0 10px 0 0;" width="90" alt="KSU GRA">
+            <h4>Graduate Research Assistant</h4>
+            <h5>Kennesaw State University</h5>
+            <p><em>August 2024 - Present</em></p>
+            <ul>
+              <li>Implemented ML algorithms for histopathological image analysis</li>
+              <li>Analyzed 4 color normalization methods across 19 tissue types</li>
+            </ul>
+          </div>
+
+          <div class="icon-box">
+            <img src="assets/img/experience/DLRL.jpeg" class="img-fluid logo-img" style="float:left;margin:0 10px 0 0;" width="90" alt="DLRL">
+            <h4>Research and Project Intern</h4>
+            <h5>Defence Electronics Research Laboratory (DLRL)</h5>
+            <p><em>January 2024 - April 2024</em></p>
+            <ul>
+              <li>Designed and implemented a Face Recognition Attendance System achieving 95% accuracy</li>
+              <li>Streamlined attendance tracking for 100+ users</li>
+            </ul>
+          </div>
+
+          <div class="icon-box">
+            <img src="assets/img/experience/Pathsetter.jpeg" class="img-fluid logo-img" style="float:left;margin:0 10px 0 0;" width="90" alt="Pathsetter">
+            <h4>ML Engineer Intern</h4>
+            <h5>Pathsetter-Hyderabad</h5>
+            <p><em>January 2024 - June 2024</em></p>
+            <ul>
+              <li>Enhanced chatbots with NLP capabilities, increasing accuracy by 20%</li>
+              <li>Collaborated with 5+ clients to deliver tailored solutions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  [Projects section code would go here]
+  <!-- Projects Section -->
+<section id="projects" class="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Projects</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="icon-box">
+          <h4>Emotion-Based Music Recommendation System</h4>
+          <p>Python, PyTorch, OpenCV, Flask, HTML, CSS, JavaScript</p>
+          <ul>
+            <li>Developed system using CNNs, analyzing 10,000+ images with 97% accuracy</li>
+            <li>Enhanced personalized recommendations and reduced processing time by 20%</li>
+          </ul>
+        </div>
+        <div class="icon-box">
+          <h4>Intelligent PDF Document Interaction Chatbot</h4>
+          <p>Python, LLMs, Langchain, Pinecone, Streamlit</p>
+          <ul>
+            <li>Designed chatbot framework processing 90% of documents with 95% accuracy</li>
+            <li>Enhanced user interaction efficiency through LLMs and LangChain</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Publications Section -->
+  [Publications section code would go here]
+  <!-- Publications Section -->
+  <section id="publications" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Publications</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="icon-box">
+            <a href="#">Evaluation of Hand-Crafted Features with Mask Images</a>
+            <h5>19th International Conference on Semantic Computing (ICSC 2025)</h5>
+  
+          </div>
+          <div class="icon-box">
+            <a href="#">VOCAL VISION: Revolutionizing 3D Design with Voice-Powered Technology</a>
+            <h5>Patent Published by Government Of India - March 2024</h5>
+          </div>
+          <div class="icon-box">
+            <a href="https://www.researchgate.net/publication/377182709_Enhancing_Sentiment_Analysis_Accuracy_by_Optimizing_Hyperparameters_of_SVM_and_Logistic_Regression_Models">Enhancing Sentiment Analysis Accuracy by Optimizing Hyperparameters of SVM and Logistic Regression Models</a>
+            <h5>International Conference on Renewable Energy, Green Computing and Sustainable Development</h5>
+          </div>
+          <div class="icon-box">
+            <a href="https://drive.google.com/file/d/1tymVIDvhsLBOk5QQKn3ZT-cAQUne4YfN/view?usp=drive_link">Strategic Fusion: A Comprehensive Approach to Apple Disease Classification Using Ensemble Learning</a>
+            <h5>45th World Conference on Applied Science Engineering and Technology</h5>
+          </div>
+          <div class="icon-box">
+            <a href="https://www.macawpublications.com/Journals/index.php/MIJARCSE/article/view/7/4">Early Stage Identification of Tomato Leaf Diseases using VGG16 and MobileNet Convolutional Neural Networks</a>
+            <h5>Macaw International Journal of Advanced Research in Computer Science and Engineering</h5>
+          </div>
+          <div class="icon-box">
+            <a href="#">IntelligentPDF: A Comprehensive Framework for Real-Time Engagement and Enhanced User Interaction</a>
+            <h5>Under Review</h5>
+          </div>
+          <div class="icon-box">
+            <a href="#">Skin Disease Classification</a>
+            <h5>Under Review</h5>
+          </div>
+          <div class="icon-box">
+            <a href="#">FaceTrack: A Smart Attendance Monitoring System Utilizing Face Recognition Technology</a>
+            <h5>International Conference on Next Generation Communication and Information Processing</h5>
+          </div>
+          <div class="icon-box">
+            <h4>Generative Adversarial Quest: Enhancing Question and Answer Generation through GAN-Based Models for Text</a>
+            <h5>International Conference on Intelligent Computing and Communication (ICICC-2024)</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Skills Section -->
+  [Skills section code would go here]
+  
+    <!-- ======= Start Skills Section ======= -->
+
+    <section id="skills" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <h4 style="text-align:left;color:#12d640;">Languages</h4>
+              <div style="text-align:left;">
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.cprogramming.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/c.svg" alt="c" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">C</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.cplusplus.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/cplusplus.svg" alt="cplusplus" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">C++</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">C#</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+                
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Java</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+                
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Python</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">JavaScript</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+                
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.mathworks.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/matlab.svg" alt="matlab" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">MATLAB</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.r-project.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/r/r-original.svg" alt="r" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">R</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <h4 style="text-align:left;color:#12d640;">Technologies</h4>
+              <div style="text-align:left;">
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.qt.io" target="_blank" rel="noreferrer"> <img src="assets\img\about\excel.png" alt="qt" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Excel</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://flask.palletsprojects.com" target="_blank" rel="noreferrer"> <img src="assets\img\about\powerbi.png" alt="flask" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">PowerBI</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://flask.palletsprojects.com" target="_blank" rel="noreferrer"> <img src="assets\img\about\tableau.png" alt="flask" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Tableau</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+                
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.djangoproject.com" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Django</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Node.js</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://reactjs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="reactjs" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">React.js</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+                
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.mysql.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">MySQL</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.mongodb.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">MongoDB</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+                
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://git-scm.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/git.svg" alt="git" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Git</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+                
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.docker.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Docker</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">AWS</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="assets\img\about\LLM.png" alt="kubernetes" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">LLMs</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://kafka.apache.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg" alt="kafka" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Kafka</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                
+                
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://unity.com" target="_blank" rel="noreferrer"> <img src="assets\img\about\unix.png" alt="unity" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Unix</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+                
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.linux.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Linux</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Bash</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+                
+                
+              </div>
+            </div>
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <h4 style="text-align:left;color:#12d640;">Libraries</h4>
+              <div style="text-align:left;">
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://opencv.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">OpenCV</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://scikit-learn.org" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Scikit-Learn</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://pytorch.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">PyTorch</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://keras.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/keras.svg" alt="keras" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Keras</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">TensorFlow</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://numpy.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/numpy.svg" alt="numpy" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">NumPy</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+                
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://pandas.pydata.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Pandas</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://matplotlib.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/matplotlib.svg" alt="matplotlib" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Matplotlib</figcaption>
+                </figure>
+                &nbsp; &nbsp;
+  
+                <figure class="item" style="display:inline-block;">
+                  <a href="https://seaborn.pydata.org" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40" /> </a>
+                  <figcaption style="text-align:center;">Seaborn</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- ======= End Skills Section ======= -->
+
+  <!-- Contact Section -->
+  [Contact section code would go here]
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contact</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+        <div class="info-box">
+          <i class="bx bx-share-alt"></i>
+          <h3 style="color:#12d640">Social Profiles</h3>
+          <div class="social-links">
+            <a href="mailto:siriyellu20025@gmail.com" target="_blank" class="gmail"><i class="bx bxl-google"></i></a>
+            <a href="https://www.linkedin.com/in/siri-reddy-yellu" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/Siri0025" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+        <div class="info-box">
+          <i class="bx bx-envelope"></i>
+          <h3 style="color:#12d640">Contact Info</h3>
+          <p><i class="icofont-envelope"></i> <a href="mailto:siriyellu20025@gmail.com">siriyellu20025@gmail.com</a></p>
+          <p><i class="icofont-phone"></i> <a href="tel:+14708548678">+1 470-854-8678</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6 form-group mt-3 mt-md-0">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone (Optional)">
+      </div>
+      <div class="form-group mt-3">
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+      </div>
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+      </div>
+      <div class="my-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your message has been sent. Thank you!</div>
+      </div>
+      <div class="text-center"><button type="submit">Send Message</button></div>
+    </form>
+  </div>
+</section>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script>
+    $(document).ready(function() {
+      function showSection(section) {
+        $('section').removeClass('section-show');
+        $(section).addClass('section-show');
+        
+        if(section === '#header') {
+          $('#header').removeClass('header-top');
+        } else {
+          $('#header').addClass('header-top');
+        }
+
+        $('.nav-menu .active').removeClass('active');
+        $('.nav-menu a[href="' + section + '"]').parent('li').addClass('active');
+      }
+
+      // Handle navigation clicks
+      $('.nav-menu a').on('click', function(e) {
+        e.preventDefault();
+        showSection($(this).attr('href'));
+      });
+
+      // Initial section on page load
+      if(window.location.hash) {
+        showSection(window.location.hash);
+      }
+
+      // Typing animation
+      let typed = new Typed('.typing', {
+        strings: [
+          "a Machine Learning Engineer",
+          "a Data Scientist",
+          "a Researcher",
+          "a Developer"
+        ],
+        loop: true,
+        typeSpeed: 85,
+        backSpeed: 85
+      });
+    });
+  </script>
+
+</body>
+</html>
