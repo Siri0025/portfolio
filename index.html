@@ -653,47 +653,15 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script>
-    $(document).ready(function() {
-      function showSection(section) {
-        $('section').removeClass('section-show');
-        $(section).addClass('section-show');
-        
-        if(section === '#header') {
-          $('#header').removeClass('header-top');
-        } else {
-          $('#header').addClass('header-top');
-        }
-
-        $('.nav-menu .active').removeClass('active');
-        $('.nav-menu a[href="' + section + '"]').parent('li').addClass('active');
-      }
-
-      // Handle navigation clicks
-      $('.nav-menu a').on('click', function(e) {
-        e.preventDefault();
-        showSection($(this).attr('href'));
-      });
-
-      // Initial section on page load
-      if(window.location.hash) {
-        showSection(window.location.hash);
-      }
-
-      // Typing animation
-      let typed = new Typed('.typing', {
-        strings: [
-          "a Machine Learning Engineer",
-          "a Data Scientist",
-          "a Researcher",
-          "a Developer"
-        ],
-        loop: true,
-        typeSpeed: 85,
-        backSpeed: 85
-      });
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["a Data Scientist", "a Data Analyst",  "a Developer", "a Researcher"],
+      loop: true,
+      typeSpeed: 85,
+      backSpeed: 85
     });
   </script>
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
