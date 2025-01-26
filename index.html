@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="assets/img/logo.png"/>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Siri Yellu - Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/img/logo.jpg"/>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -15,14 +19,78 @@
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .profile-img {
+      transition: transform 0.3s ease-in-out;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+    
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    .logo-img {
+      transition: all 0.3s ease;
+      border-radius: 8px;
+    }
+
+    .logo-img:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(18, 214, 64, 0.3);
+    }
+
+    .icon-box {
+      background: rgba(9, 32, 58, 0.9);
+      transition: all 0.3s ease;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .icon-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(18, 214, 64, 0.2);
+    }
+
+    .section-show {
+      display: block !important;
+    }
+
+    section {
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      top: 140px;
+      bottom: 100%;
+      opacity: 0;
+      transition: ease-in-out 0.4s;
+      z-index: 2;
+    }
+
+    section.section-show {
+      top: 100px;
+      bottom: auto;
+      opacity: 1;
+      padding-bottom: 45px;
+    }
+
+    .nav-menu a {
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
-  <img class="background-image" src="assets/img/about/back.png"></img>
-  
+  <!-- Background Image -->
+  <img class="background-image" src="assets/img/about/back.png" alt="background">
+
   <!-- Header -->
   <header id="header" class="header-tops">
     <div class="container">
@@ -49,75 +117,76 @@
   </header>
 
   <!-- About Section -->
-  <section id="about" class="about">
-    <div class="about-me container">
-      <div class="section-title">
-        <h2>About Me</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <!-- Profile Images with Hover Effect -->
-          <div class="profile-images">
-            <img src="assets/img/about/siricdaypic2.png" class="img-fluid profile-img mb-4" alt="Profile Picture 1">
-            <img src="assets/img/about/siripic1.JPG" class="img-fluid profile-img" alt="Profile Picture 2">
-          </div>
+<section id="about" class="about">
+  <div class="about-me container">
+    <div class="section-title">
+      <h2>About Me</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4" data-aos="fade-right">
+        <!-- Profile Images with Hover Effect -->
+        <div class="profile-images">
+          <img src="assets/img/about/siricdaypic2.png" class="img-fluid profile-img mb-4" alt="Profile Picture 1">
+          <img src="assets/img/about/siripic1.JPG" class="img-fluid profile-img" alt="Profile Picture 2">
         </div>
-        
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p>
-            I am a Graduate student in Computer Science at Kennesaw State University with a strong foundation in Machine Learning, 
-            Deep Learning, and AI applications. Experienced in implementing cutting-edge ML algorithms for real-world problems, 
-            with a focus on computer vision and natural language processing. Published researcher with multiple papers in 
-            prestigious conferences and a patent holder for innovative technology solutions.
-          </p>
-  
-          <!-- Move Certificates Carousel here -->
-           
-        
-          <marquee>
-          <div class="certificates-carousel owl-carousel owl-theme">
-            <div class="item">
-              <div class="certificate-box">
-                <object data="assets/img/about/Generative Adversarial Quest_ Enhancing Question and Answer Generation through GAN - Yellu Siri.pdf" 
-                       type="application/pdf" width="100%" height="400px">
-                  <p>Unable to display PDF. <a href="assets/img/about/Generative Adversarial Quest_ Enhancing Question and Answer Generation through GAN - Yellu Siri.pdf" target="_blank">Click here</a> to download.</p>
-                </object>
-                <h6 class="text-center mt-2">Generative Adversarial Quest Paper</h6>
-              </div>
+      </div>
+      
+      <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <p>
+          I am a Graduate student in Computer Science at Kennesaw State University with a strong foundation in Machine Learning, 
+          Deep Learning, and AI applications. Experienced in implementing cutting-edge ML algorithms for real-world problems, 
+          with a focus on computer vision and natural language processing. Published researcher with multiple papers in 
+          prestigious conferences and a patent holder for innovative technology solutions.
+        </p>
+
+        <!-- Move Certificates Carousel here -->
+         
+      
+        <marquee>
+        <div class="certificates-carousel owl-carousel owl-theme">
+          <div class="item">
+            <div class="certificate-box">
+              <object data="assets/img/about/Generative Adversarial Quest_ Enhancing Question and Answer Generation through GAN - Yellu Siri.pdf" 
+                     type="application/pdf" width="100%" height="400px">
+                <p>Unable to display PDF. <a href="assets/img/about/Generative Adversarial Quest_ Enhancing Question and Answer Generation through GAN - Yellu Siri.pdf" target="_blank">Click here</a> to download.</p>
+              </object>
+              <h6 class="text-center mt-2">Generative Adversarial Quest Paper</h6>
             </div>
-            <div class="item">
-              <div class="certificate-box">
-                <object data="assets/img/about/iferp-apple diseases classification.pdf" 
-                       type="application/pdf" width="100%" height="400px">
-                  <p>Unable to display PDF. <a href="assets/img/about/iferp-apple diseases classification.pdf" target="_blank">Click here</a> to download.</p>
-                </object>
-                <h6 class="text-center mt-2">Apple Disease Classification Paper</h6>
-              </div>
+          </div>
+          <div class="item">
+            <div class="certificate-box">
+              <object data="assets/img/about/iferp-apple diseases classification.pdf" 
+                     type="application/pdf" width="100%" height="400px">
+                <p>Unable to display PDF. <a href="assets/img/about/iferp-apple diseases classification.pdf" target="_blank">Click here</a> to download.</p>
+              </object>
+              <h6 class="text-center mt-2">Apple Disease Classification Paper</h6>
             </div>
-            <div class="item">
-              <div class="certificate-box">
-                <object data="assets/img/about/Ms.Yellu Siri-Twitter sentiment Analysis.pdf" 
-                       type="application/pdf" width="100%" height="400px">
-                  <p>Unable to display PDF. <a href="assets/img/about/Ms.Yellu Siri-Twitter sentiment Analysis.pdf" target="_blank">Click here</a> to download.</p>
-                </object>
-                <h6 class="text-center mt-2">Twitter Sentiment Analysis Paper</h6>
-              </div>
+          </div>
+          <div class="item">
+            <div class="certificate-box">
+              <object data="assets/img/about/Ms.Yellu Siri-Twitter sentiment Analysis.pdf" 
+                     type="application/pdf" width="100%" height="400px">
+                <p>Unable to display PDF. <a href="assets/img/about/Ms.Yellu Siri-Twitter sentiment Analysis.pdf" target="_blank">Click here</a> to download.</p>
+              </object>
+              <h6 class="text-center mt-2">Twitter Sentiment Analysis Paper</h6>
             </div>
-            <div class="item">
-              <div class="certificate-box">
-                <object data="assets/img/about/YELLU SIRI_Certificate.pdf" 
-                       type="application/pdf" width="100%" height="400px">
-                  <p>Unable to display PDF. <a href="assets/img/about/YELLU SIRI_Certificate.pdf" target="_blank">Click here</a> to download.</p>
-                </object>
-                <h6 class="text-center mt-2">Achievement Certificate</h6>
-              </div>
-            </marquee>
+          </div>
+          <div class="item">
+            <div class="certificate-box">
+              <object data="assets/img/about/YELLU SIRI_Certificate.pdf" 
+                     type="application/pdf" width="100%" height="400px">
+                <p>Unable to display PDF. <a href="assets/img/about/YELLU SIRI_Certificate.pdf" target="_blank">Click here</a> to download.</p>
+              </object>
+              <h6 class="text-center mt-2">Achievement Certificate</h6>
             </div>
+          </marquee>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   
 
   <!-- Education Section -->
@@ -128,19 +197,21 @@
       </div>
       <div class="row">
         <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12 mt-4 mt-md-0 icon-box">
+            <img src="assets/img/education/kennesaw state university.png" class="img-fluid logo-img" style="float:left;margin:0 10px 0 0;" width="90" alt="KSU">
             <h4 style="text-align:left;"><a href="#" style="color:#12d640">Kennesaw State University</a></h4>
             <h5 style="text-align:left;">Master of Science in Computer Science</h5>
-            <span class="left" style="float:left;color:#fff;"><em>August 2024 - December 2025</em></span>
-            <span class="right" style="float:right;color:#fff;"><em>GA, United States</em></span><br><br>
+            <span style="float:left;color:#fff;"><em>August 2024 - December 2025</em></span>
+            <span style="float:right;color:#fff;"><em>GA, United States</em></span><br><br>
             <p><strong>SGPA: 4.00</strong></p>
           </div>
           
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12 mt-4 mt-md-0 icon-box">
+            <img src="assets/img/education/cvr.jpeg" class="img-fluid logo-img" style="float:left;margin:0 10px 0 0;" width="90" alt="CVR">
             <h4 style="text-align:left;"><a href="#" style="color:#12d640">CVR College of Engineering</a></h4>
             <h5 style="text-align:left;">Bachelor of Technology in Computer Science with Minor in AIML</h5>
-            <span class="left" style="float:left;color:#fff;"><em>May 2020 - April 2024</em></span>
-            <span class="right" style="float:right;color:#fff;"><em>Hyderabad, Telangana</em></span><br><br>
+            <span style="float:left;color:#fff;"><em>May 2020 - April 2024</em></span>
+            <span style="float:right;color:#fff;"><em>Hyderabad, Telangana</em></span><br><br>
             <p><strong>CGPA: 9.24 (Minor: 8.83)</strong></p>
           </div>
         </div>
@@ -157,16 +228,18 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="icon-box">
+            <img src="assets/img/experience/kennesaw state university-Gra.png" class="img-fluid logo-img" style="float:left;margin:0 10px 0 0;" width="90" alt="KSU GRA">
             <h4>Graduate Research Assistant</h4>
             <h5>Kennesaw State University</h5>
             <p><em>August 2024 - Present</em></p>
             <ul>
-              <li>Implemented ML algorithms for histopathological image analysis, evaluating 46 features on 5,179 images</li>
+              <li>Implemented ML algorithms for histopathological image analysis</li>
               <li>Analyzed 4 color normalization methods across 19 tissue types</li>
             </ul>
           </div>
-          
+
           <div class="icon-box">
+            <img src="assets/img/experience/DLRL.jpeg" class="img-fluid logo-img" style="float:left;margin:0 10px 0 0;" width="90" alt="DLRL">
             <h4>Research and Project Intern</h4>
             <h5>Defence Electronics Research Laboratory (DLRL)</h5>
             <p><em>January 2024 - April 2024</em></p>
@@ -177,6 +250,7 @@
           </div>
 
           <div class="icon-box">
+            <img src="assets/img/experience/Pathsetter.jpeg" class="img-fluid logo-img" style="float:left;margin:0 10px 0 0;" width="90" alt="Pathsetter">
             <h4>ML Engineer Intern</h4>
             <h5>Pathsetter-Hyderabad</h5>
             <p><em>January 2024 - June 2024</em></p>
@@ -191,79 +265,30 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Projects</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="icon-box">
-            <h4>Emotion-Based Music Recommendation System</h4>
-            <p>Python, PyTorch, OpenCV, Flask, HTML, CSS, JavaScript</p>
-            <ul>
-              <li>Developed system using CNNs, analyzing 10,000+ images with 97% accuracy</li>
-              <li>Enhanced personalized recommendations and reduced processing time by 20%</li>
-            </ul>
-          </div>
-
-          <div class="icon-box">
-            <h4>Intelligent PDF Document Interaction Chatbot</h4>
-            <p>Python, LLMs, Langchain, Pinecone, Streamlit</p>
-            <ul>
-              <li>Designed chatbot framework processing 90% of documents with 95% accuracy</li>
-              <li>Enhanced user interaction efficiency through LLMs and LangChain</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Publications Section -->
-<section id="publications" class="services">
+  [Projects section code would go here]
+  <!-- Projects Section -->
+<section id="projects" class="services">
   <div class="container">
     <div class="section-title">
-      <h2>Publications</h2>
+      <h2>Projects</h2>
     </div>
     <div class="row">
       <div class="col-lg-12">
         <div class="icon-box">
-          <a href="url">Evaluation of Hand-Crafted Features with Mask Images</a>
-          <h5>19th International Conference on Semantic Computing (ICSC 2025)</h5>
-
+          <h4>Emotion-Based Music Recommendation System</h4>
+          <p>Python, PyTorch, OpenCV, Flask, HTML, CSS, JavaScript</p>
+          <ul>
+            <li>Developed system using CNNs, analyzing 10,000+ images with 97% accuracy</li>
+            <li>Enhanced personalized recommendations and reduced processing time by 20%</li>
+          </ul>
         </div>
         <div class="icon-box">
-          <a href="url">VOCAL VISION: Revolutionizing 3D Design with Voice-Powered Technology</a>
-          <h5>Patent Published by Government Of India - March 2024</h5>
-        </div>
-        <div class="icon-box">
-          <a href="https://www.researchgate.net/publication/377182709_Enhancing_Sentiment_Analysis_Accuracy_by_Optimizing_Hyperparameters_of_SVM_and_Logistic_Regression_Models">Enhancing Sentiment Analysis Accuracy by Optimizing Hyperparameters of SVM and Logistic Regression Models</a>
-          <h5>International Conference on Renewable Energy, Green Computing and Sustainable Development</h5>
-        </div>
-        <div class="icon-box">
-          <a href="https://drive.google.com/file/d/1tymVIDvhsLBOk5QQKn3ZT-cAQUne4YfN/view?usp=drive_link">Strategic Fusion: A Comprehensive Approach to Apple Disease Classification Using Ensemble Learning</a>
-          <h5>45th World Conference on Applied Science Engineering and Technology</h5>
-        </div>
-        <div class="icon-box">
-          <a href="https://www.macawpublications.com/Journals/index.php/MIJARCSE/article/view/7/4">Early Stage Identification of Tomato Leaf Diseases using VGG16 and MobileNet Convolutional Neural Networks</a>
-          <h5>Macaw International Journal of Advanced Research in Computer Science and Engineering</h5>
-        </div>
-        <div class="icon-box">
-          <a href="url">IntelligentPDF: A Comprehensive Framework for Real-Time Engagement and Enhanced User Interaction</a>
-          <h5>Under Review</h5>
-        </div>
-        <div class="icon-box">
-          <a href="url">Skin Disease Classification</a>
-          <h5>Under Review</h5>
-        </div>
-        <div class="icon-box">
-          <a href="url">FaceTrack: A Smart Attendance Monitoring System Utilizing Face Recognition Technology</a>
-          <h5>International Conference on Next Generation Communication and Information Processing</h5>
-        </div>
-        <div class="icon-box">
-          <h4>Generative Adversarial Quest: Enhancing Question and Answer Generation through GAN-Based Models for Text</a>
-          <h5>International Conference on Intelligent Computing and Communication (ICICC-2024)</h5>
+          <h4>Intelligent PDF Document Interaction Chatbot</h4>
+          <p>Python, LLMs, Langchain, Pinecone, Streamlit</p>
+          <ul>
+            <li>Designed chatbot framework processing 90% of documents with 95% accuracy</li>
+            <li>Enhanced user interaction efficiency through LLMs and LangChain</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -271,6 +296,62 @@
 </section>
 
 
+  <!-- Publications Section -->
+  [Publications section code would go here]
+  <!-- Publications Section -->
+  <section id="publications" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Publications</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="icon-box">
+            <a href="#">Evaluation of Hand-Crafted Features with Mask Images</a>
+            <h5>19th International Conference on Semantic Computing (ICSC 2025)</h5>
+  
+          </div>
+          <div class="icon-box">
+            <a href="#">VOCAL VISION: Revolutionizing 3D Design with Voice-Powered Technology</a>
+            <h5>Patent Published by Government Of India - March 2024</h5>
+          </div>
+          <div class="icon-box">
+            <a href="https://www.researchgate.net/publication/377182709_Enhancing_Sentiment_Analysis_Accuracy_by_Optimizing_Hyperparameters_of_SVM_and_Logistic_Regression_Models">Enhancing Sentiment Analysis Accuracy by Optimizing Hyperparameters of SVM and Logistic Regression Models</a>
+            <h5>International Conference on Renewable Energy, Green Computing and Sustainable Development</h5>
+          </div>
+          <div class="icon-box">
+            <a href="https://drive.google.com/file/d/1tymVIDvhsLBOk5QQKn3ZT-cAQUne4YfN/view?usp=drive_link">Strategic Fusion: A Comprehensive Approach to Apple Disease Classification Using Ensemble Learning</a>
+            <h5>45th World Conference on Applied Science Engineering and Technology</h5>
+          </div>
+          <div class="icon-box">
+            <a href="https://www.macawpublications.com/Journals/index.php/MIJARCSE/article/view/7/4">Early Stage Identification of Tomato Leaf Diseases using VGG16 and MobileNet Convolutional Neural Networks</a>
+            <h5>Macaw International Journal of Advanced Research in Computer Science and Engineering</h5>
+          </div>
+          <div class="icon-box">
+            <a href="#">IntelligentPDF: A Comprehensive Framework for Real-Time Engagement and Enhanced User Interaction</a>
+            <h5>Under Review</h5>
+          </div>
+          <div class="icon-box">
+            <a href="#">Skin Disease Classification</a>
+            <h5>Under Review</h5>
+          </div>
+          <div class="icon-box">
+            <a href="#">FaceTrack: A Smart Attendance Monitoring System Utilizing Face Recognition Technology</a>
+            <h5>International Conference on Next Generation Communication and Information Processing</h5>
+          </div>
+          <div class="icon-box">
+            <h4>Generative Adversarial Quest: Enhancing Question and Answer Generation through GAN-Based Models for Text</a>
+            <h5>International Conference on Intelligent Computing and Communication (ICICC-2024)</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Skills Section -->
+  [Skills section code would go here]
+  
     <!-- ======= Start Skills Section ======= -->
 
     <section id="skills" class="services">
@@ -500,10 +581,9 @@
     </section>
   
     <!-- ======= End Skills Section ======= -->
-  
-  
-  
 
+  <!-- Contact Section -->
+  [Contact section code would go here]
   <!-- Contact Section -->
 <section id="contact" class="contact">
   <div class="container">
@@ -565,14 +645,14 @@
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
 
+  <!-- Template Main JS File -->
   <script>
     var typed = new Typed('.typing', {
       strings: ["a Machine Learning Engineer", "a Data Scientist", "a Researcher", "a Developer"],
@@ -581,7 +661,6 @@
       backSpeed: 85
     });
   </script>
-
-  <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
