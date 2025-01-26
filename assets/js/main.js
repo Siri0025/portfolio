@@ -1,3 +1,4 @@
+
 !(function($) {
   "use strict";
 
@@ -38,6 +39,7 @@
         }
 
         return false;
+
       }
     }
   });
@@ -85,59 +87,13 @@
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
 
-  // Initialize Components on Document Ready
-  $(document).ready(function() {
-    // Initialize typed.js
-    if ($('.typing').length) {
-      let typed = new Typed('.typing', {
-        strings: ["a Machine Learning Engineer", "a Data Scientist", "a Researcher", "a Developer"],
-        loop: true,
-        typeSpeed: 85,
-        backSpeed: 85,
-        backDelay: 1500
-      });
-    }
-
-    // Initialize Certificates Carousel
-    if ($('.certificates-carousel').length) {
-      $(".certificates-carousel").owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        nav: true,
-        dots: true,
-        margin: 20,
-        smartSpeed: 1000,
-        navText: [
-          '<i class="bx bx-chevron-left"></i>',
-          '<i class="bx bx-chevron-right"></i>'
-        ],
-        responsive: {
-          0: { items: 1 },
-          768: { items: 1 }
-        },
-        onInitialized: function() {
-          // Custom initialization logic for PDFs
-          $('.certificate-box object').on('load', function() {
-            $(this).css('height', '400px');
-          });
-        }
-      });
-    }
-
-    // Initialize Venobox
-    if ($('.venobox').length) {
-      $('.venobox').venobox({
-        'share': false,
-        'spinner': 'wave',
-        'spinColor': '#12d640'
-      });
-    }
+  // jQuery counterUp
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 1000
   });
 
-  // Skills Animation
+  // Skills section
   $('.skills-content').waypoint(function() {
     $('.progress .progress-bar').each(function() {
       $(this).css("width", $(this).attr("aria-valuenow") + '%');
@@ -146,54 +102,45 @@
     offset: '80%'
   });
 
-  // Counter Animation
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
-  });
-
-  // Section Visibility Handler
-  function handleSectionVisibility() {
-    var scrollPosition = $(window).scrollTop();
-    
-    $('section').each(function() {
-      var target = $(this);
-      var targetTop = target.offset().top - 200;
-      
-      if (scrollPosition >= targetTop) {
-        target.addClass('section-show');
+  // Testimonials carousel (uses the Owl Carousel library)
+  $(".testimonials-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      900: {
+        items: 3
       }
-    });
-  }
-
-  // Scroll Event Handler
-  $(window).scroll(function() {
-    handleSectionVisibility();
+    }
   });
 
-  // Handle Loading State
+  // Porfolio isotope and filter
   $(window).on('load', function() {
-    if ($('.loading-screen').length) {
-      $('.loading-screen').fadeOut(1000);
-    }
-    handleSectionVisibility();
+    var portfolioIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item',
+      layoutMode: 'fitRows'
+    });
 
-    // Initialize Portfolio Filter if exists
-    if ($('.portfolio-container').length) {
-      var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+    $('#portfolio-flters li').on('click', function() {
+      $("#portfolio-flters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      portfolioIsotope.isotope({
+        filter: $(this).data('filter')
       });
+    });
 
-      $('#portfolio-flters li').on('click', function() {
-        $("#portfolio-flters li").removeClass('filter-active');
-        $(this).addClass('filter-active');
+  });
 
-        portfolioIsotope.isotope({
-          filter: $(this).data('filter')
-        });
-      });
-    }
+  // Initiate venobox (lightbox feature used in portofilo)
+  $(document).ready(function() {
+    $('.venobox').venobox();
   });
 
 })(jQuery);
